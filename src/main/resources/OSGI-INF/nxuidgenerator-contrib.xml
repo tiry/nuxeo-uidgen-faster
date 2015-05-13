@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<component name="org.nuxeo.ecm.platform.uidgen.service.contribs">
+	
+	<extension target="org.nuxeo.ecm.platform.uidgen.service.UIDGeneratorService"
+		point="sequencers">
+
+		<sequencer name="esSequencer" class="org.nuxeo.uidgen.es.ESUIDSequencer"></sequencer>
+		<sequencer name="redisSequencer" class="org.nuxeo.uidgen.redis.RedisUIDSequencer"></sequencer>
+
+	</extension>
+
+</component>
